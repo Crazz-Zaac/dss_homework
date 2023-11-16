@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mathematics quiz',
+    name='math_quiz',
     version='0.1.0',
     packages=find_packages(),
     # install_requires=[
@@ -9,7 +9,7 @@ setup(
     # ],
     entry_points={
         'console_scripts': [
-            'math_quiz = mathquiz.__main__:main',
+            'math_quiz = math_quiz.__main__:math_quiz',
         ],
     },
     # Additional metadata
