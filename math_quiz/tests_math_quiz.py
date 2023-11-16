@@ -4,7 +4,7 @@ from math_quiz import generate_random_number, randomize_operator, operate
 
 class TestMathGame(unittest.TestCase):
 
-    def test_function_A(self):
+    def test_random_number_generator(self):
         # Test if random numbers generated are within the specified range
         min_val = 1
         max_val = 10
@@ -12,7 +12,7 @@ class TestMathGame(unittest.TestCase):
             rand_num = generate_random_number(min_val, max_val)
             self.assertTrue(min_val <= rand_num <= max_val)
 
-    def test_function_B(self):
+    def test_randomize_operator(self):
         # Test if symbols generated are within the specific symbols +, -, * or not
 
         # operator validation
@@ -24,7 +24,7 @@ class TestMathGame(unittest.TestCase):
             self.assertIn(res, valid_operators)
 
 
-    def test_function_C(self):
+    def test_operate(self):
         test_cases = [
             (5, 2, '+', '5 + 2', 7),
             (3, 9, '*', '3 * 9', 27),
